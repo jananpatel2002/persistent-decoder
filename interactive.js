@@ -5,6 +5,7 @@ const decoder = new Decoder('');
 
 // Assign event handlers to events.
 const keyTextInput = document.getElementById('key');
+
 keyTextInput.style.backgroundColor = 'yellow';
 keyTextInput.addEventListener('keyup', validateKeyTextInput);
 
@@ -19,6 +20,11 @@ decodeTextBox.addEventListener('keyup', colorDecodedTextBox);
 // TODO #2: Add event handlers for cypher key, encode, and decode text boxes.
 //   Every time the user types in a character, the cypher key and the
 //   encoded/decoded text boxes should have their state saved.
+keyTextInput.addEventListener("keyup",()=>{
+
+  localStorage.setItem("key", keyTextInput.value);
+  
+})
 
 // TODO #2: Add an event handler for the clear button.
 //   When the user clicks the clear button, the state should be cleared.
