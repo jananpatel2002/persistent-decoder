@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Encoder/Decoder</title>
+    <script src="interactive.js" type="module"></script>
+  </head>
+  <body>
+    <center>
+      <h1>Encoder/decoder</h1>
+      <img
+        alt="decoder-ring"
+        src="https://github.com/emeryberger/web-programming/raw/master/decoder-ring.jpg"
+      />
+      <br />
+      <form>
+        <label for="key">Key:</label>
+        <input type="text" id="key" />
+        <br /><br />
+        <label for="encode">Text to encode:</label>
+        <input type="text" id="encode" />
+        <label for="encoded">Encoded = </label>
+        <input type="text" id="encoded" readonly="readonly" />
+        <br /><br />
+        <label for="decode">Text to decode:</label>
+        <input type="text" id="decode" />
+        <label for="decoded">Decoded = </label>
+        <input type="text" id="decoded" readonly="readonly" />
+        <br /><br />
+        <!--
+          TODO #1: Add a button that will be used to clear local storage state.
+            Make sure you give it the id "clear-state" and the text "Clear".
+        -->
+        <button id="clear-state">Clear</button>
+      </form>
+    </center>
+  </body>
+</html>
